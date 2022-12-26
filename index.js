@@ -58,7 +58,8 @@ dqs("#number60").addEventListener("keyup", (e) => {
 
 // Next focus
 const nextFocus = (id, id2) => {
-  dqs(id).addEventListener("keyup", () => {
+  dqs(id).addEventListener("keyup", (e) => {
+    e.key == "Enter" && dqs(id2).focus();
     dqs(id).value.length == 2 && dqs(id2).focus();
   });
 };
