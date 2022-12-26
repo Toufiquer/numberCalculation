@@ -47,4 +47,5 @@ dqs("#clear").addEventListener("click", () => {
   dqs("#number40").value = "";
   dqs("#number60").value = "";
   dqs("#total").value = "";
+  dqs("#subject-1").focus();
 });
