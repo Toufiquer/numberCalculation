@@ -35,8 +35,7 @@ dqs("#submitTotal").addEventListener("click", () => {
 dqs("#number60").addEventListener("keyup", () => {
   calculateInTotal();
 });
-
-dqs("#clear").addEventListener("click", () => {
+const clearAll = () => {
   dqs("#subjectName").value = "";
   dqs("#subject-1").value = "";
   dqs("#subject-2").value = "";
@@ -48,12 +47,18 @@ dqs("#clear").addEventListener("click", () => {
   dqs("#number60").value = "";
   dqs("#total").value = "";
   dqs("#subject-1").focus();
+};
+dqs("#clear").addEventListener("click", () => {
+  clearAll();
+});
+
+dqs("#number60").addEventListener("keyup", (e) => {
+  e.key == "Enter" && clearAll();
 });
 
 // Next focus
 const nextFocus = (id, id2) => {
   dqs(id).addEventListener("keyup", () => {
-    console.log(dqs(id).value.length, " => Line No: 55");
     dqs(id).value.length == 2 && dqs(id2).focus();
   });
 };
