@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabina</title>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-blue-200">
+    <h1 class="text-2xl my-2 text-center">Number Calculation</h1>
+    <div class="container mx-auto">
+      <div class="grid grid-cols-2 min-h-screen">
+        <div class="min-h-screen bg-blue-300 p-4">
+          <!-- Name -->
+          <div class="relative my-4">
+            <input type="search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Name" required />
+          </div>
+          <!-- Name -->
+          <!-- Subject 1 -->
+          <div class="relative">
+            <input type="number" id="subject-1" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Subject 1" required />
+          </div>
+          <!-- Subject 1 -->
+          <!-- Subject 2 -->
+          <div class="relative my-1">
+            <input type="number" id="subject-2" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Subject 2" required />
+          </div>
+          <!-- Subject 2 -->
+          <!-- Subject 3 -->
+          <div class="relative my-1">
+            <input type="number" id="subject-3" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Subject 3" required />
+          </div>
+          <!-- Subject 3 -->
+          <!-- Subject 4 -->
+          <div class="relative my-1">
+            <input type="number" id="subject-4" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Subject 4" required />
+          </div>
+          <!-- Subject 4 -->
+          <!-- Subject 5 -->
+          <div class="relative my-1">
+            <input type="number" id="subject-5" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Subject 5" required />
+          </div>
+          <!-- Subject 5 -->
+          <!-- Button -->
+          <div class="flex justify-center"><button type="submit" id="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Calculate</button></div>
+          <!-- Button -->
+        </div>
+        <div class="min-h-screen bg-blue-300 p-4">
+          <!-- Total Number -->
+          <div class="relative my-2">
+            <h1 class="font-bold">Total Number</h1>
+            <input type="number" id="totalNumber" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Total Number" readonly required />
+          </div>
+          <!-- Total Number -->
+          <!-- Number 40% -->
+          <div class="relative my-2">
+            <h1 class="font-bold">Number 40%</h1>
+            <input type="number" id="number40" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Number 40%" readonly required />
+          </div>
+          <!-- Number 40% -->
+          <!-- Add 60% -->
+          <div class="relative my-2">
+            <h1 class="font-bold">Add 60%</h1>
+            <input type="number" id="number60" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Add 60%" required />
+          </div>
+          <!-- Add 60% -->
+          <!-- Button Total  -->
+          <div class="flex justify-center"><button type="submit" id="submitTotal" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Calculate Total</button></div>
+          <!-- Button Total  -->
+          <!-- Total Number  -->
+          <div class="relative my-2">
+            <h1 class="font-bold">Total Number</h1>
+            <input type="number" id="total" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Total Number" readonly required />
+          </div>
+          <!-- Total Number  -->
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
