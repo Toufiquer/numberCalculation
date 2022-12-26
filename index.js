@@ -49,3 +49,16 @@ dqs("#clear").addEventListener("click", () => {
   dqs("#total").value = "";
   dqs("#subject-1").focus();
 });
+
+// Next focus
+const nextFocus = (id, id2) => {
+  dqs(id).addEventListener("keyup", () => {
+    console.log(dqs(id).value.length, " => Line No: 55");
+    dqs(id).value.length == 2 && dqs(id2).focus();
+  });
+};
+nextFocus("#subject-1", "#subject-2");
+nextFocus("#subject-2", "#subject-3");
+nextFocus("#subject-3", "#subject-4");
+nextFocus("#subject-4", "#subject-5");
+nextFocus("#subject-5", "#number60");
