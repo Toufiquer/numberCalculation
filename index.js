@@ -35,3 +35,16 @@ dqs("#submitTotal").addEventListener("click", () => {
 dqs("#number60").addEventListener("keyup", () => {
   calculateInTotal();
 });
+
+dqs("#clear").addEventListener("click", () => {
+  dqs("#subjectName").value = "";
+  dqs("#subject-1").value = "";
+  dqs("#subject-2").value = "";
+  dqs("#subject-3").value = "";
+  dqs("#subject-4").value = "";
+  dqs("#subject-5").value = "";
+  dqs("#totalNumber").value = "";
+  dqs("#number40").value = "";
+  dqs("#number60").value = "";
+  dqs("#total").value = "";
+});
