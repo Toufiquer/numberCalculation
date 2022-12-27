@@ -9,9 +9,11 @@ const calculateTotal = () => {
 
 const nextFocus = (id, id2 = false) => {
   dqs(id).addEventListener("keyup", (e) => {
-    if (e.key === "Enter") {
+    if (id === "#subject-9" && e.key === "Enter") {
       clearAll();
       dqs("#subject-1").focus();
+    } else if (e.key === "Enter") {
+      dqs(id2).focus();
     }
     const value = getValue(id);
     id2 && ("" + value).length == 2 && dqs(id2).focus();
