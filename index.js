@@ -56,7 +56,7 @@ dqs("#number60").addEventListener("keyup", (e) => {
   e.key == "Enter" && clearAll();
 });
 
-// Next focus
+// Next focus by typing
 const nextFocus = (id, id2) => {
   dqs(id).addEventListener("keyup", (e) => {
     e.key == "Enter" && dqs(id2).focus();
@@ -68,3 +68,32 @@ nextFocus("#subject-2", "#subject-3");
 nextFocus("#subject-3", "#subject-4");
 nextFocus("#subject-4", "#subject-5");
 nextFocus("#subject-5", "#number60");
+
+// const startVoiceToText = (id, id2 = false) => {
+//   dqs(id).addEventListener("focus", () => {
+//     let recognition = new webkitSpeechRecognition();
+//     recognition.continuous = true;
+//     recognition.lang = "number";
+//     recognition.onresult = function (e) {
+//       if (e.results[0][0].transcript) {
+//         dqs(id).value = e.results[0][0].transcript;
+//       }
+//       if (id && id2 && dqs(id).value.length == 2) {
+//         dqs(id2).focus();
+//         calculateTotal();
+//         calculateInTotal();
+//       }
+//     };
+//     recognition.start();
+//   });
+// };
+
+// const newFocus = () => {
+//   startVoiceToText("#subject-1", "#subject-2");
+//   startVoiceToText("#subject-2", "#subject-3");
+//   startVoiceToText("#subject-3", "#subject-4");
+//   startVoiceToText("#subject-4", "#subject-5");
+//   startVoiceToText("#subject-5", "#number60");
+//   startVoiceToText("#number60");
+// };
+// newFocus();
